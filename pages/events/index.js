@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-function Events() {
+function AllEventsPage() {
   return (
     <div>
-      <h1>Events Page</h1>
+      <h1>All Events Page</h1>
       <ul>
         <li>
           <Link href="/events/event-1">Event 1</Link>
@@ -22,4 +22,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default AllEventsPage;
