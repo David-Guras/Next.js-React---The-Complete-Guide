@@ -1,23 +1,12 @@
 import Link from "next/link";
+import { getAllEvents } from '../../dummy-data'
+import EventList from '../../components/events/event-list'
 
 function AllEventsPage() {
+  const allEvents = getAllEvents();
   return (
     <div>
-      <h1>All Events Page</h1>
-      <ul>
-        <li>
-          <Link href="/events/event-1">Event 1</Link>
-        </li>
-        <li>
-          <Link href="/events/event-2">Event 2</Link>
-        </li>
-        <li>
-          <Link href="/events/event-3">Event 3</Link>
-        </li>
-        <li>
-          <Link href="/events/event-4">Event 4</Link>
-        </li>
-      </ul>
+      <EventList items={allEvents} />
     </div>
   );
 }
